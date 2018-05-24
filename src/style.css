@@ -2,8 +2,12 @@ section {
     text-align: center; 
 }
 section textarea {
+    border-radius: 10px;
     margin-top: 2% 2% 2% 2%;
-}
+} 
 div {
-    margin-right: 10%;
+    text-align: left;
+    border-radius: 2%;
+    border-style: inset;
+    height: 120px;
 }
