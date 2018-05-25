@@ -24,11 +24,11 @@ bCifrar.addEventListener('click', function code() {
             let intento = String.fromCharCode((coAscii- 160 + 4) % 6 + 160);
             caracter += intento*/
         } else {
-            let otroCaracter = String.fromCharCode(coAscii)
+            let oCaracter = String.fromCharCode(coAscii)
             caracter += oCaracter;
         }
     }
-    return textoS.value = caracter;
+    textoS.value = caracter;
 });
 
 bDecifrar.addEventListener('click', function decode() {
@@ -46,9 +46,9 @@ bDecifrar.addEventListener('click', function decode() {
             let numero = String.fromCharCode((coAscii - 57 - 4) % 10 + 57);
             caracter += numero;
         } else {
-            let otroCaracter = String.fromCharCode(coAscii)
+            let oCaracter = String.fromCharCode(coAscii)
             caracter += oCaracter;
         }
     }
-    return textoS.value = caracter;
+    textoS.value = caracter;
 });

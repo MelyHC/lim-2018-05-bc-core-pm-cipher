@@ -3,11 +3,10 @@ section {
 }
 textarea {
     border-radius: 10px;
-    margin-top: 2% 2% 2% 2%;
+    margin: 2% 2% 2% 2%;
 } 
-div {
-    text-align: left;
-    border-radius: 2%;
-    border-style: inset;
-    height: 120px;
-}
+ input {
+    border-radius: 10px;
+    margin: 2% 2% 2% 2%;
+    padding: 2% 3% 2% 3%;
+ }
