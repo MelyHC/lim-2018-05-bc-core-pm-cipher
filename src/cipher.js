@@ -1,16 +1,12 @@
-let textoE = document.getElementById('textoEntrada');
-let textoS = document.getElementById('textoSalida');
-
 window.cipher = {
-    encode :  () =>  {     
+    encode :  (offset, string) =>  {     
         let caracter = '';
-        let textoL = textoE.value;
-        for (let i = 0; i < textoL.length; i++ ) {
+        for (let i = 0; i < string.length; i++ ) {
             //Obteniendo el código Ascii de cada letra de mi texto
             let coAscii = textoL.charCodeAt(i); 
             //Filtro el coAscii para aplicar la fórmula correspondiente y devolver 
             if(coAscii >= 65 && coAscii <= 90) {
-                let letraMayu = String.fromCharCode((coAscii - 65 + 4) % 26 + 65);
+                let letraMayu = String.fromCharCode((coAscii - 65 + offset) % 26 + 65);
                 caracter += letraMayu;
             } else if(coAscii >= 97 && coAscii <= 122) {
                 let letraMinu = String.fromCharCode((coAscii - 97 + 4) % 26 + 97);
@@ -23,7 +19,7 @@ window.cipher = {
                 caracter += oCaracter;
             }
         }
-        textoS.value = caracter;
+        return caracter;
     },
 
     decode : () => {
