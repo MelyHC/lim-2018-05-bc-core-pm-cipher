@@ -1,12 +1,14 @@
-section {
+body {
     text-align: center; 
 }
+
 textarea {
     border-radius: 10px;
-    margin: 2% 2% 2% 2%;
+    margin: 2% 2%;
 } 
- input {
+
+input {
     border-radius: 10px;
     margin: 2% 2% 2% 2%;
     padding: 2% 3% 2% 3%;
- }
+}
