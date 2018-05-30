@@ -7,10 +7,14 @@
   </head>
   <body>
     <h1>Cifrado Cesar</h1>
-    <textarea rows="10" cols="50" placeholder="Coloca tu texto a cifrar o descifrar" id="textoEntrada"></textarea>
-    <textarea rows="10" cols="50" placeholder="Salida de tu texto cifrado o descifrado" id="textoSalida"></textarea>
-    <br />
-    <input type="button" value="Cifrado" id="botonCifrado"/>
+    <div>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto.<br> En este caso tu podras elegir el número de espacios a desplazar. </div>
+    <h3>N<sup>o</sup> de desplazamiento</h3>
+    <input type="number" id="númeroDesplazamiento">
+    <br>
+    <textarea rows="15" cols="45" placeholder="Coloca tu texto a cifrar o descifrar" id="textoEntrada"></textarea>
+    <textarea rows="15" cols="45" placeholder="Salida de tu texto cifrado o descifrado" id="textoSalida"></textarea>
+    <br>
+    <input type="button" value="Cifrado" id="botonCifrado">
     <input type="button" value="Descifrar" id="botonDescifrado">
     <!-- div id="root"></div -->
     <script src="cipher.js"></script>
