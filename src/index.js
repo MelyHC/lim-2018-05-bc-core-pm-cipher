@@ -1,12 +1,11 @@
 let textoE = document.getElementById('textoEntrada');
 let textoS = document.getElementById('textoSalida');
 
-const bCifrar = document.getElementById('botonCifrado');
-const bDecifrar = document.getElementById('botonDescifrado');
+let bCifrar = document.getElementById('botonCifrado');
+let bDecifrar = document.getElementById('botonDescifrado');
 
+let texto = bCifrar.addEventListener('click', cipher.encode(33, textoE.value))
+let carta = bDecifrar.addEventListener('click', cipher.decode(33, textoE.value))
 
-let letraÑ = String.fromCharCode(165);//UFT-8 usa un código diferente al Ascii para algunas letras
-
-bCifrar.addEventListener('click', cipher.encode(offset, textoE.value))
-
-bDecifrar.addEventListener('click', cipher.decode(offset, textoE.value))
+textoS.value = texto
+textoS.value = carta
