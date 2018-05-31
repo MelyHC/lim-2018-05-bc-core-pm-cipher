@@ -3,12 +3,12 @@ body {
 }
 
 h3 {
-    margin: 1%; 
+    margin: 2% 1% 1% 1%; 
 }
 
 textarea {
     border-radius: 10px;
-    margin: 2%;
+    margin: 1% 2%;
 } 
 
 input {
