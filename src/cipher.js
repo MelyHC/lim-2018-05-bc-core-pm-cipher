@@ -4,7 +4,7 @@ window.cipher = {
         for (let i = 0; i < string.length; i++ ) {
             //Obteniendo el código Ascii de cada letra de mi texto
             let coAscii = string.charCodeAt(i); 
-            //Filtro el coAscii para aplicar la fórmula correspondiente y devolver 
+            //Filtro el coAscii para aplicar la fórmula correspondiente
             if(coAscii >= 65 && coAscii <= 90) {
                 let letraMayu = String.fromCharCode((coAscii - 65 + offset) % 26 + 65);
                 caracter += letraMayu;
@@ -42,4 +42,11 @@ window.cipher = {
         }
         return caracter;
     },
+
+    createCipherWithOffset: (offset) => {
+        return {
+            encode:(string) => {return cipher.encode(offset, string)},
+            decode:(string) => {return cipher.decode(offset, string)}
+        }
+    }
 }
