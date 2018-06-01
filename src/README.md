@@ -30,7 +30,7 @@ los puedan cifrar y descifrar y no tengan que salir de ella.
 
 ## Desarrollo del producto
 
-Comencé pensando en la forma más simple y práctica de entender la interfaz claro esta a mi punto 
+Comencé pensando en la forma más simple y práctica de entender la interfaz claro esta desde punto 
 de vista, al poco tiempo me dí cuenta que el usuario no podia ver exactamente el texto que estaba 
 cifrando ya que solo usaba una caja de texto para ambos resultados.
 

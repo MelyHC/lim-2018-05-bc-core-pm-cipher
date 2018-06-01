@@ -1,10 +1,12 @@
 window.cipher = {
     encode :  (offset, string) =>  {     
+        //Declaro una variable donde se almacenara el texto cifrado
         let caracter = '';
+        //Bucle para recorrer el texto ingresado
         for (let i = 0; i < string.length; i++ ) {
-            //Obteniendo el código Ascii de cada letra de mi texto
+            //Obteniendo el código Ascii de cada letra del texto ingresado
             let coAscii = string.charCodeAt(i); 
-            //Filtro el coAscii para aplicar la fórmula correspondiente
+            //Evalua que el dato de entrada este entre los parámetros asignados
             if(coAscii >= 65 && coAscii <= 90) {
                 let letraMayu = String.fromCharCode((coAscii - 65 + offset) % 26 + 65);
                 caracter += letraMayu;
@@ -23,9 +25,13 @@ window.cipher = {
     },
 
     decode : (offset, string) => {
+        //Declaro una variable donde se almacenara el texto descifrado
         let caracter = '';
+        //Bucle para recorrer el texto ingresado
         for (let i = 0; i < string.length; i++ ) {
+            //Obteniendo el código Ascii de cada letra del texto ingresado
             let coAscii = string.charCodeAt(i);
+            //Filtro el coAscii para aplicar la fórmula correspondiente
             if(coAscii >= 65 && coAscii <= 90) {
                 let letraMayu = String.fromCharCode((coAscii - 90 - offset) % 26 + 90);
                 caracter += letraMayu;
