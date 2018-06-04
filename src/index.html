@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Cifrado Cesar</h1>
-    <div>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto.
-      <br>En este caso tu podras elegir el número de espacios a desplazarte en el alfabeto.
-      <br>En esta versión también podrás desplazar números.
-      <br>Con este simple cifrado podrás mantener en secreto tus mensajes, pero no es uno de los cifrados más seguros.
+    <h1>Secret Message</h1><img src="https://cdn.planetared.com/wp-content/uploads/2018/02/Como-abrir-chrome-siempre-en-incognito-1.png" >
+    <div>Esta página se basa en el cifrado Cesar para codificar tu mensaje.
+      <br>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto.
+      <br>En este caso tu podrás elegir el número de espacios a desplazarte.
+      <br>Con este simple cifrado podrás mantener en secreto tus mensajes.
     </div>
     <h3>N<sup>o</sup> de desplazamiento</h3>
-    <input type="number" id="númeroDesplazamiento">
+    <input type="number" id="displacementNumber">
     <br>
-    <textarea rows="15" cols="45" placeholder="Coloca tu texto a cifrar o descifrar" id="textoEntrada"></textarea>
-    <textarea rows="15" cols="45" placeholder="Salida de tu texto cifrado o descifrado" id="textoSalida"></textarea>
+    <textarea rows="15" cols="45" placeholder="Coloca tu texto a cifrar o descifrar" id="inputText"></textarea>
+    <textarea rows="15" cols="45" placeholder="Salida de tu texto cifrado o descifrado" id="exitText"></textarea>
     <br>
-    <input type="button" value="   Cifrar   " id="botonCifrado">
-    <input type="button" value="Descifrar" id="botonDescifrado">
-    <!-- div id="root"></div -->
+    <input type="button" value="   Cifrar   " id="encodeButton">
+    <input type="button" value="Descifrar" id="decodeButton">
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

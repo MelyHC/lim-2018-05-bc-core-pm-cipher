@@ -1,5 +1,12 @@
 body {
     text-align: center; 
+    background: rgb(114, 31, 153);
+    color: white;
+}
+
+img {
+    height: 50px;
+    width: 50px;
 }
 
 h3 {
@@ -17,7 +24,6 @@ input {
     font-size: 25px;
 }
 
-#númeroDesplazamiento {
+#displacementNumber {
     width: 50px;
-
 }
