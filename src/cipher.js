@@ -40,7 +40,7 @@ window.cipher = {
                 character += lowerCaseLetter;
             } else if(coAscii >= 48 && coAscii <= 57) {
                 let number = String.fromCharCode((coAscii - 57 - offset) % 10 + 57);
-                caracter += number;
+                character += number;
             } else {
                 let otherCharacter = String.fromCharCode(coAscii)
                 character += otherCharacter;
