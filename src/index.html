@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caesar Cipher</title>
+    <title>Secret Message</title>
+    <link rel="icon" href="https://cdn.planetared.com/wp-content/uploads/2018/02/Como-abrir-chrome-siempre-en-incognito-1.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Secret Message</h1><img src="https://cdn.planetared.com/wp-content/uploads/2018/02/Como-abrir-chrome-siempre-en-incognito-1.png" >
-    <div>Esta página se basa en el cifrado Cesar para codificar tu mensaje.
+  <body class="w3-center w3-light-grey w3-sand">
+    <header class="w3-deep-purple w3-text-white">
+      <h1>Secret Message</h1>
+      <img class="w3-margin-bottom" alt="Incógnito" src="https://cdn.planetared.com/wp-content/uploads/2018/02/Como-abrir-chrome-siempre-en-incognito-1.png">
+    </header>
+    <section class="w3-margin-top" id="description">Esta página se basa en el cifrado Cesar para codificar tu mensaje.
       <br>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto.
       <br>En este caso tu podrás elegir el número de espacios a desplazarte.
       <br>Con este simple cifrado podrás mantener en secreto tus mensajes.
-    </div>
-    <h3>N<sup>o</sup> de desplazamiento</h3>
-    <input type="number" id="displacementNumber">
-    <br>
-    <textarea rows="15" cols="45" placeholder="Coloca tu texto a cifrar o descifrar" id="inputText"></textarea>
-    <textarea rows="15" cols="45" placeholder="Salida de tu texto cifrado o descifrado" id="exitText"></textarea>
-    <br>
-    <input type="button" value="   Cifrar   " id="encodeButton">
-    <input type="button" value="Descifrar" id="decodeButton">
+    </section>
+    <div class="w3-margin">
+      <strong>N<sup>o</sup> de desplazamiento</strong>
+      <br>
+      <input class="w3-round" type="text" id="displacement-number">
+    </div> 
+    <section class="w3-row">
+      <div class="w3-col m5 l5">
+        <textarea class="w3-round-large" placeholder="Coloca tu texto a cifrar o descifrar" id="input-text"></textarea>
+      </div>
+      <div class="w3-col m2 l2">
+        <button class="w3-button w3-orange w3-round w3-hover-orange w3-margin" id="encode-button"><strong>Cifrar</strong></button>
+        <button class="w3-button w3-blue w3-round w3-hover-blue w3-margin" id="decode-button"><strong>Descifrar</strong></button>
+      </div>
+      <div class="w3-col m5 l5 w3-margin-bottom">   
+        <textarea class="w3-round-large" placeholder="Salida de tu texto cifrado o descifrado" id="exit-text"></textarea>
+      </div>
+    </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

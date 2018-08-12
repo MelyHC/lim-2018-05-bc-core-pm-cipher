@@ -1,29 +1,33 @@
-body {
-    text-align: center; 
-    background: rgb(114, 31, 153);
-    color: white;
-}
-
 img {
-    height: 50px;
-    width: 50px;
-}
-
-h3 {
-    margin: 2% 1% 1% 1%; 
+  height: 46px;
+  width: 50px;
+  filter: invert(1);
 }
 
 textarea {
-    border-radius: 10px;
-    margin: 1% 2%;
+  width: 90%;
+  height: 250px;
+  resize: none;
 } 
 
-input {
-    border-radius: 10px;
-    margin: 1% 2%;
-    font-size: 25px;
+#displacement-number {
+  width: 50px;
 }
 
-#displacementNumber {
-    width: 50px;
+@media screen and (max-width: 798px) {
+
+  textarea {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #description {
+    font-size: 15px;
+  }
+
+  textarea {
+    height: 110px;
+  }
 }
