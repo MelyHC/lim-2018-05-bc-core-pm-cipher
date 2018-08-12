@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="w3-center w3-light-grey w3-sand">
+  <body class="w3-center w3-light-grey">
     <header class="w3-deep-purple w3-text-white">
       <h1>Secret Message</h1>
       <img class="w3-margin-bottom" alt="Incógnito" src="https://cdn.planetared.com/wp-content/uploads/2018/02/Como-abrir-chrome-siempre-en-incognito-1.png">
     </header>
-    <section class="w3-margin-top" id="description">Esta página se basa en el cifrado Cesar para codificar tu mensaje.
-      <br>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto.
-      <br>En este caso tu podrás elegir el número de espacios a desplazarte.
-      <br>Con este simple cifrado podrás mantener en secreto tus mensajes.
+    <section id="description">
+      <div class="w3-margin-top">Esta página se basa en el cifrado Cesar para codificar tu mensaje.
+        <br>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto.
+        <br>En este caso tu podrás elegir el número de espacios a desplazarte.
+        <br>Con este simple cifrado podrás mantener en secreto tus mensajes.
+      </div>
+      <div class="w3-margin">
+        <strong>N<sup>o</sup> de desplazamiento</strong>
+        <br>
+        <input class="w3-round" type="text" id="displacement-number">
+      </div>
     </section>
-    <div class="w3-margin">
-      <strong>N<sup>o</sup> de desplazamiento</strong>
-      <br>
-      <input class="w3-round" type="text" id="displacement-number">
-    </div> 
-    <section class="w3-row">
+    <div class="w3-row">
       <div class="w3-col m5 l5">
         <textarea class="w3-round-large" placeholder="Coloca tu texto a cifrar o descifrar" id="input-text"></textarea>
       </div>
       <div class="w3-col m2 l2">
         <button class="w3-button w3-orange w3-round w3-hover-orange w3-margin" id="encode-button"><strong>Cifrar</strong></button>
-        <button class="w3-button w3-blue w3-round w3-hover-blue w3-margin" id="decode-button"><strong>Descifrar</strong></button>
+        <button class="w3-button w3-blue w3-round w3-hover-blue w3-margin w3-text-black" id="decode-button"><strong>Descifrar</strong></button>
       </div>
-      <div class="w3-col m5 l5 w3-margin-bottom">   
+      <div class="w3-col m5 l5 w3-margin-bottom">
         <textarea class="w3-round-large" placeholder="Salida de tu texto cifrado o descifrado" id="exit-text"></textarea>
       </div>
-    </section>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
